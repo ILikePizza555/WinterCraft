@@ -3,14 +3,14 @@
   "id": "modid",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "WinterCraft",
+  "description": "Frozen minecraft mod",
   "authors": [
-    "Me!"
+    "Izzy!"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "",
+    "sources": "https://github.com/ILikePizza555/WinterCraft"
   },
 
   "license": "CC0-1.0",
