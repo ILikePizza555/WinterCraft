@@ -10,6 +10,7 @@ import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.PickaxeItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -19,9 +20,9 @@ public class WinterCraft implements ModInitializer {
 
     public static final String ID_PERMAFROST = "permafrost";
     public static final Block BLOCK_PERMAFROST = new Block(
-            FabricBlockSettings.of(Material.EARTH)
+            FabricBlockSettings
+                    .of(Material.EARTH)
                     .hardness(3.75f)
-                    .breakByHand(false)
                     .breakByTool(FabricToolTags.PICKAXES)
                     .build());
 
