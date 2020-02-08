@@ -2,6 +2,9 @@ package com.izzylan.wintercraft;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.tag.FabricTag;
+import net.fabricmc.fabric.api.tag.FabricTagBuilder;
+import net.fabricmc.fabric.api.tools.FabricToolTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
@@ -15,7 +18,12 @@ public class WinterCraft implements ModInitializer {
     public static final String NAMESPACE = "wintercraft";
 
     public static final String ID_PERMAFROST = "permafrost";
-    public static final Block BLOCK_PERMAFROST = new Block(FabricBlockSettings.of(Material.EARTH).build());
+    public static final Block BLOCK_PERMAFROST = new Block(
+            FabricBlockSettings.of(Material.EARTH)
+                    .hardness(3.75f)
+                    .breakByHand(false)
+                    .breakByTool(FabricToolTags.PICKAXES)
+                    .build());
 
     public static Identifier BuildModIdentifier(String name) {
         return new Identifier(NAMESPACE, name);
